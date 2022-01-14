@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)file:///C:/Users/HP/AppData/Local/Temp/qgis2web/qgis2web_2022_01_14-20_02_19_327000/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./peta_files/ol.css">
+        <link rel="stylesheet" href="./peta_files/ol3-layerswitcher.css">
+        <link rel="stylesheet" href="./peta_files/qgis2web.css">
+        <style>
+        .ol-geocoder.gcd-gl-container {
+            top: 135px!important;
+        }
+        .ol-geocoder .gcd-gl-btn {
+            width: 21px!important;
+            height: 21px!important;
+        }
+        </style>
+        <link rel="stylesheet" href="./peta_files/font-awesome.min.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        </style>
+
+        <style>
+        .geolocate {
+            top: 65px;
+            left: .5em;
+        }
+        .ol-touch .geolocate {
+            top: 80px;
+        }
+        </style>
+    <link href="./peta_files/ol3-geocoder.min.css" rel="stylesheet">
+<style>
+.tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+.tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+.tooltip-static {
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+.tooltip-measure:before,
+.tooltip-static:before {
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+.tooltip-static:before {
+  border-top-color: #ffcc33;
+}
+.measure-control {
+  top: 100px;
+  left: .5em;
+}
+.ol-touch .measure-control {
+  top: 130px;
+}
+</style>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            
+        <div class="ol-viewport" data-view="36" style="position: relative; overflow: hidden; width: 100%; height: 100%; touch-action: none;"><canvas class="ol-unselectable" width="1920" height="902" style="width: 100%; height: 100%; display: block;"></canvas><div class="ol-overlaycontainer"></div><div class="ol-overlaycontainer-stopevent"><div class="ol-overlay-container ol-selectable" style="position: absolute; left: 485px; top: 380px;"><div id="popup" class="ol-popup" style="display: block;">
+                <a href="file:///C:/Users/HP/AppData/Local/Temp/qgis2web/qgis2web_2022_01_14-20_02_19_327000/index.html#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"><table><tbody><tr><th>ID:</th><td>2438</td></tr><tr><th>ID_Kec:</th><td>3321030</td></tr><tr><th>Kecamatan:</th><td>Guntur</td></tr><tr><th>kode_prop:</th><td>33</td></tr><tr><th>kode_kab:</th><td>3321</td></tr><tr><th>irigasi:</th><td>819,00</td></tr><tr><th>tadahhujan:</th><td>2 557,00</td></tr><tr><th>jumlah:</th><td>3 376,00</td></tr></tbody></table></div>
+            </div></div><div class="ol-zoom ol-unselectable ol-control"><button class="ol-zoom-in" type="button" title="Zoom in">+</button><button class="ol-zoom-out" type="button" title="Zoom out">−</button></div><div class="ol-rotate ol-unselectable ol-control ol-hidden"><button class="ol-rotate-reset" type="button" title="Reset rotation"><span class="ol-compass" style="transform: rotate(0rad);">⇧</span></button></div><div class="ol-attribution ol-unselectable ol-control ol-uncollapsible"><ul><li><a href="https://github.com/tomchadwin/qgis2web">qgis2web</a></li><li style=""><a href="https://openlayers.org/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAHGAAABxgEXwfpGAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAhNQTFRF////AP//AICAgP//AFVVQECA////K1VVSbbbYL/fJ05idsTYJFtbbcjbJllmZszWWMTOIFhoHlNiZszTa9DdUcHNHlNlV8XRIVdiasrUHlZjIVZjaMnVH1RlIFRkH1RkH1ZlasvYasvXVsPQH1VkacnVa8vWIVZjIFRjVMPQa8rXIVVkXsXRsNveIFVkIFZlIVVj3eDeh6GmbMvXH1ZkIFRka8rWbMvXIFVkIFVjIFVkbMvWH1VjbMvWIFVlbcvWIFVla8vVIFVkbMvWbMvVH1VkbMvWIFVlbcvWIFVkbcvVbMvWjNPbIFVkU8LPwMzNIFVkbczWIFVkbsvWbMvXIFVkRnB8bcvW2+TkW8XRIFVkIlZlJVloJlpoKlxrLl9tMmJwOWd0Omh1RXF8TneCT3iDUHiDU8LPVMLPVcLPVcPQVsPPVsPQV8PQWMTQWsTQW8TQXMXSXsXRX4SNX8bSYMfTYcfTYsfTY8jUZcfSZsnUaIqTacrVasrVa8jTa8rWbI2VbMvWbcvWdJObdcvUdszUd8vVeJaee87Yfc3WgJyjhqGnitDYjaarldPZnrK2oNbborW5o9bbo9fbpLa6q9ndrL3ArtndscDDutzfu8fJwN7gwt7gxc/QyuHhy+HizeHi0NfX0+Pj19zb1+Tj2uXk29/e3uLg3+Lh3+bl4uXj4ufl4+fl5Ofl5ufl5ujm5+jmySDnBAAAAFp0Uk5TAAECAgMEBAYHCA0NDg4UGRogIiMmKSssLzU7PkJJT1JTVFliY2hrdHZ3foSFhYeJjY2QkpugqbG1tre5w8zQ09XY3uXn6+zx8vT09vf4+Pj5+fr6/P39/f3+gz7SsAAAAVVJREFUOMtjYKA7EBDnwCPLrObS1BRiLoJLnte6CQy8FLHLCzs2QUG4FjZ5GbcmBDDjxJBXDWxCBrb8aM4zbkIDzpLYnAcE9VXlJSWlZRU13koIeW57mGx5XjoMZEUqwxWYQaQbSzLSkYGfKFSe0QMsX5WbjgY0YS4MBplemI4BdGBW+DQ11eZiymfqQuXZIjqwyadPNoSZ4L+0FVM6e+oGI6g8a9iKNT3o8kVzNkzRg5lgl7p4wyRUL9Yt2jAxVh6mQCogae6GmflI8p0r13VFWTHBQ0rWPW7ahgWVcPm+9cuLoyy4kCJDzCm6d8PSFoh0zvQNC5OjDJhQopPPJqph1doJBUD5tnkbZiUEqaCnB3bTqLTFG1bPn71kw4b+GFdpLElKIzRxxgYgWNYc5SCENVHKeUaltHdXx0dZ8uBI1hJ2UUDgq82CM2MwKeibqAvSO7MCABq0wXEPiqWEAAAAAElFTkSuQmCC"></a></li><li><a href="file:///C:/Users/HP/AppData/Local/Temp/qgis2web/qgis2web_2022_01_14-20_02_19_327000/index.html"></a></li></ul><button type="button" title="Attributions"><span>i</span></button></div><div class="measure-control ol-unselectable ol-control"><button><img src="./peta_files/measure-control.png"></button></div><div class="geolocate ol-unselectable ol-control"><button class=" fa fa-map-marker"></button></div><div class="ol-geocoder gcd-gl-container"><div class="gcd-gl-control ol-control"><button type="button" class="gcd-gl-btn"></button><input type="text" id="gcd-input-query" class="gcd-gl-input" autocomplete="off" placeholder="Search for ..."><a id="gcd-input-reset" class="gcd-gl-reset gcd-hidden"></a></div><ul class="gcd-gl-result"></ul></div></div></div></div>
+        <script src="./peta_files/qgis2web_expressions.js.download"></script>
+<script src="./peta_files/proj4.js.download"></script>
+        <script>proj4.defs('EPSG:4326','+proj=longlat +datum=WGS84 +no_defs');</script>
+        <script src="./peta_files/polyfills.js.download"></script>
+        <script src="./peta_files/functions.js.download"></script>
+        <script src="./peta_files/ol-debug.js.download"></script>
+        <script src="./peta_files/ol3-layerswitcher.js.download"></script>
+    <script src="./peta_files/ol3-geocoder.js.download"></script>
+        <script src="./peta_files/DemakPeta_0.js.download"></script>
+        <script src="./peta_files/DemakPeta_0_style.js.download"></script>
+        <script src="./peta_files/layers.js.download" type="text/javascript"></script> 
+        <script src="./peta_files/qgis2web.js.download"></script>
+        <script src="./peta_files/Autolinker.min.js.download"></script>
+    
+
+</body></html>

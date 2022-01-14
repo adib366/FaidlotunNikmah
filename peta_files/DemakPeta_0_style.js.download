@@ -1,0 +1,126 @@
+var size = 0;
+var placement = 'point';
+function categories_DemakPeta_0(feature, value, size, resolution, labelText,
+                       labelFont, labelFill) {
+                switch(value.toString()) {case '1 241,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(163,52,210,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '1 308,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(172,232,20,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '3 252,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(217,98,150,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '3 376,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(217,157,113,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '3 524,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(51,216,214,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '3 572,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(228,212,119,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '3 677,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(41,229,148,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '4 191,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(125,209,136,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '4 312,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(214,28,28,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '4 610,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(96,57,204,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '5 204,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(41,152,232,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '5 339,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(230,13,201,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+case '5 429,00':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(121,225,76,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;
+default:
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(175,179,138,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(22,57,230,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement)
+    })];
+                    break;}};
+
+var style_DemakPeta_0 = function(feature, resolution){
+    var context = {
+        feature: feature,
+        variables: {}
+    };
+    var value = feature.get("jumlah");
+    var labelText = "";
+    size = 0;
+    var labelFont = "10.725px \'MS Shell Dlg 2\', sans-serif";
+    var labelFill = "rgba(0, 0, 0, 1)";
+    var textAlign = "left";
+    var offsetX = 8;
+    var offsetY = 3;
+    var placement = 'point';
+    if (feature.get("Kecamatan") !== null) {
+        labelText = String(feature.get("Kecamatan"));
+    }
+    
+var style = categories_DemakPeta_0(feature, value, size, resolution, labelText,
+                          labelFont, labelFill);
+
+    return style;
+};

@@ -1,0 +1,37 @@
+ol.proj.get("EPSG:4326").setExtent([110.300762, -7.129127, 111.055301, -6.701925]);
+var wms_layers = [];
+var format_DemakPeta_0 = new ol.format.GeoJSON();
+var features_DemakPeta_0 = format_DemakPeta_0.readFeatures(json_DemakPeta_0, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:4326'});
+var jsonSource_DemakPeta_0 = new ol.source.Vector({
+    attributions: [new ol.Attribution({html: '<a href=""></a>'})],
+});
+jsonSource_DemakPeta_0.addFeatures(features_DemakPeta_0);var lyr_DemakPeta_0 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_DemakPeta_0, 
+                style: style_DemakPeta_0,
+    title: 'Demak Peta<br />\
+    <img src="styles/legend/DemakPeta_0_0.png" /> 1 241,00<br />\
+    <img src="styles/legend/DemakPeta_0_1.png" /> 1 308,00<br />\
+    <img src="styles/legend/DemakPeta_0_2.png" /> 3 252,00<br />\
+    <img src="styles/legend/DemakPeta_0_3.png" /> 3 376,00<br />\
+    <img src="styles/legend/DemakPeta_0_4.png" /> 3 524,00<br />\
+    <img src="styles/legend/DemakPeta_0_5.png" /> 3 572,00<br />\
+    <img src="styles/legend/DemakPeta_0_6.png" /> 3 677,00<br />\
+    <img src="styles/legend/DemakPeta_0_7.png" /> 4 191,00<br />\
+    <img src="styles/legend/DemakPeta_0_8.png" /> 4 312,00<br />\
+    <img src="styles/legend/DemakPeta_0_9.png" /> 4 610,00<br />\
+    <img src="styles/legend/DemakPeta_0_10.png" /> 5 204,00<br />\
+    <img src="styles/legend/DemakPeta_0_11.png" /> 5 339,00<br />\
+    <img src="styles/legend/DemakPeta_0_12.png" /> 5 429,00<br />\
+    <img src="styles/legend/DemakPeta_0_13.png" /> <br />'
+        });
+
+lyr_DemakPeta_0.setVisible(true);
+var layersList = [lyr_DemakPeta_0];
+lyr_DemakPeta_0.set('fieldAliases', {'ID': 'ID', 'ID_Kec': 'ID_Kec', 'Kecamatan': 'Kecamatan', 'kode_prop': 'kode_prop', 'kode_kab': 'kode_kab', 'irigasi': 'irigasi', 'tadahhujan': 'tadahhujan', 'jumlah': 'jumlah', });
+lyr_DemakPeta_0.set('fieldImages', {'ID': 'TextEdit', 'ID_Kec': 'TextEdit', 'Kecamatan': 'TextEdit', 'kode_prop': 'TextEdit', 'kode_kab': 'TextEdit', 'irigasi': 'TextEdit', 'tadahhujan': 'TextEdit', 'jumlah': 'TextEdit', });
+lyr_DemakPeta_0.set('fieldLabels', {'ID': 'inline label', 'ID_Kec': 'inline label', 'Kecamatan': 'inline label', 'kode_prop': 'inline label', 'kode_kab': 'inline label', 'irigasi': 'inline label', 'tadahhujan': 'inline label', 'jumlah': 'inline label', });
+lyr_DemakPeta_0.on('precompose', function(evt) {
+    evt.context.globalCompositeOperation = 'normal';
+});
